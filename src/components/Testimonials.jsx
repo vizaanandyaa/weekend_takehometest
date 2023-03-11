@@ -1,21 +1,26 @@
-import { Component } from "react";
+import React,{useState,useEffect} from "react";
+import axios from 'axios';
 import Testimonial from "./Testimonial";
 
-class Testimonials extends Component{
-    render(){
-        const datas = [{title : 'Blu Kicks', desc : 'Places where you can leverage tools and software to free up time to focus on growing the business.'},
-    {title : 'Angelus', desc : 'All those apps took me months to get running. Now the site practically runs itself!'},
-    {title : 'SoYoung', desc : 'Unless you have a truly unique product, it will be very hard to differentiate and gain brand traction'}]
-        return(
-            <div>
-                {datas.map((data,index)=>{
-                    return(
-                        <Testimonial key={index} title={data.title} desc={data.desc}/>
-                    )
-                })}
-            </div>
-        )
-    }
+function Testimonials(){
+    const [testi,setTesti] = useState([])
+
+    useEffect(()=>{
+        axios.get('https://challenge.fe.weekendinc.com/testimonial')
+        .then(res =>{
+            console.log(res)
+            setTesti(res.data)
+        })
+        .catch(err =>{
+            console.log(err)
+        })
+    })
+    return(
+        <div>
+            {testi.map((test => <Testimonial title={test.by} desc={test.testimony}/>))}
+        </div>
+    )
 }
 
 export default Testimonials
+

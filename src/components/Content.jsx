@@ -2,10 +2,11 @@ import { Component } from "react";
 
 class Content extends Component{
     render() {
+        const {img,title} = this.props
         return (
              <div>
-                <img src={this.props.img} alt="" />
-                <h4>{this.props.title}</h4>
+                <img src={img} alt="" />
+                <h4>{title}</h4>
              </div>
         );
     }
