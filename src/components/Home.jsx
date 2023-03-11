@@ -1,15 +1,16 @@
 import { Component } from "react";
 import profile from '../images/header/Bitmap.png'
+import '../App.css'
 
 class Home extends Component{
     render(){
         return(
             <div>
-                <div className="header">
+                <div className="header col-6">
                     <img src={profile} alt="" />
                     <div className="greetings">
                         <p>Good Morning</p>
-                        <h5> Fellas </h5>
+                        <h5>Fellas</h5>
                     </div>
                 </div>
                 <div className="landing">
