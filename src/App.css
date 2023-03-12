@@ -123,4 +123,31 @@
 
 .contents{
   background-color: black;
+  padding-top: 156px;
+}
+
+.contents h2, p{
+  text-align: center;
+}
+
+.contents h2{
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+.contents p{
+  padding: 0 25%;
+  margin-bottom: 63px;
+}
+
+.content{
+  display: flex;
+}
+
+.content img{
+  width: 60%;
+}
+
+.content h5{
+  font-size: 16px;
 }

@@ -6,7 +6,7 @@ class Content extends Component{
         return (
              <div>
                 <img src={img} alt="" />
-                <h4>{title}</h4>
+                <h5>{title}</h5>
              </div>
         );
     }
