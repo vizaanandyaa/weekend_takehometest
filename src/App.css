@@ -33,7 +33,7 @@
   background-image: url(background/home/Path\ 3.png),url(background/home/Bitmap.png), url(background/home/Oval.png),url(background/home/Path.png),url(background/home/Path\ 2.png);
   background-size: 20%,15%, 10%,50%,100%;
   background-position-x: 940px,center,400px,165px,0px;
-  background-position-y: 303px, 280px,240px,-35px,-50px;
+  background-position-y: 303px, 280px,240px,-35px,-10px;
   background-repeat: no-repeat;
   padding-top: 84px;
 }
@@ -58,4 +58,28 @@
   margin-bottom: 200px;
   border: none;
   border-radius: 29px;
+}
+
+.about{
+  background-color: #EEBECE;
+  background-image:url(background/about/Oval.png),url(background/about/Bitmap\ Copy.png),url(background/about/Path\ 4.png);
+  background-position-x: 200px,right,right;
+  background-position-y:350px,30px,0;
+  background-repeat: no-repeat;
+}
+
+.aboutWrap{
+  width: 42%;
+  margin: auto 30%;
+  padding: 160px 0 279px;
+  font-weight: 600;
+  font-size: 21;
+}
+
+.aboutWrap span{
+  color: #0B24FB;
+}
+
+.aboutWrap h5{
+  font-style: italic;
 }
