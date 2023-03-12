@@ -8,6 +8,7 @@ import Contents from './components/Contents';
 import Footer from './components/Footer';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Test from './components/test';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

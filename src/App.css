@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;500;600;700;800;900&display=swap');
 
 *{
   font-family:'Work Sans', sans-serif;
@@ -82,4 +82,45 @@
 
 .aboutWrap h5{
   font-style: italic;
+}
+
+.testimonials{
+  position: absolute;
+  top: 1250px;
+  left: 0;
+  right: 0;
+}
+
+.testimonials h1{
+  font-weight: 900;
+  text-align: center;
+}
+
+.testiWrapper{
+  display: flex;
+  width: 50%;
+  overflow: hidden;
+  height: 30%;
+  margin: auto;
+}
+
+.testimony{
+  background-color: white;
+  margin: 1%;
+  width: 600px;
+  padding: 2%;
+}
+
+.testimony h2{
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.testimony p{
+  font-size: 12px;
+  width: 150px;
+}
+
+.contents{
+  background-color: black;
 }
