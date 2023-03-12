@@ -13,9 +13,9 @@ class Home extends Component{
                         <h5>Fellas</h5>
                     </div>
                 </div>
-                <div className="landing">
+                <div className="landing text-center">
                     <h1>WEEKEND FROM HOME</h1>
-                    <p>Stay active with a little workout</p>
+                    <p>Stay active with a little workout.</p>
                     <button>Let's Go</button>
                 </div>
             </div>

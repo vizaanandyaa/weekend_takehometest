@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;500;600;700;800&display=swap');
 
 *{
   font-family:'Work Sans', sans-serif;
@@ -25,5 +25,37 @@
 .greetings h5{
   font-size: 16px;
   margin: 0;
+  font-weight: 700;
+}
+
+.landing{
+  background-color: #EEBECE;
+  background-image: url(background/home/Path\ 3.png),url(background/home/Bitmap.png), url(background/home/Oval.png),url(background/home/Path.png),url(background/home/Path\ 2.png);
+  background-size: 20%,15%, 10%,50%,100%;
+  background-position-x: 940px,center,400px,165px,0px;
+  background-position-y: 303px, 280px,240px,-35px,-50px;
+  background-repeat: no-repeat;
+  padding-top: 84px;
+}
+
+.landing h1{
+  color: white;
+  font-weight: 800;
+  font-size: 62px;
+  margin-bottom: 20px;
+}
+
+.landing p{
+  color: white;
+  font-size: 21px;
+  font-style: italic;
   font-weight: 600;
+  margin-bottom: 267px;
+}
+
+.landing button{
+  padding: 20px 84px;
+  margin-bottom: 200px;
+  border: none;
+  border-radius: 29px;
 }
