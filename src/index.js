@@ -7,6 +7,7 @@ import Testimonials from './components/Testimonials';
 import Contents from './components/Contents';
 import Footer from './components/Footer';
 import reportWebVitals from './reportWebVitals';
+import Testing from './components/Testing';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -17,6 +18,7 @@ root.render(
     <Testimonials/>
     <Contents/>
     <Footer/>
+    <Testing/>
   </React.StrictMode>
 );
 

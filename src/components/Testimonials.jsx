@@ -1,8 +1,13 @@
 import React,{useState,useEffect} from "react";
 import axios from 'axios';
 import Testimonial from "./Testimonial";
-import Carousel from 'react-bootstrap/Carousel'
 import '../App.css'
+import { Swiper, SwiperSlide} from 'swiper/react';
+import {FreeMode} from 'swiper';
+import "swiper/css";
+import "swiper/css/free-mode";
+import 'bootstrap/dist/css/bootstrap.min.css'
+import {NextButton,PrevButton} from './Button'
 
 function Testimonials(){
     const [testi,setTesti] = useState([])
@@ -17,11 +22,34 @@ function Testimonials(){
         })
     });
     return(
-        <div className="testimonials">
-            <h1 className="text-white">Testimonials</h1>
-            <div className="testiWrapper">
-                {testi.map((test => <Testimonial title={test.by} desc={test.testimony}/>))}       
-            </div>
+        <div className="testimonials py-1 px-1 justify-content">
+            <h1 className="text-white my-4">Testimonials</h1>
+            <Swiper 
+            freeMode ={true}
+            grabCursor={true}
+            modules ={[FreeMode]}
+            className='mySwipper'
+            breakpoints={{
+                480:{
+                    slidesPerView : 2,
+                    spaceBetween : 10,
+                },
+                1024:{
+                    slidesPerView : 3,
+                    spaceBetween : 10,
+                }
+            }}>
+               <PrevButton/> 
+               {testi.map((test) => {
+                    return(
+                        <SwiperSlide>
+                            <Testimonial title={test.by} desc={test.testimony}/>
+                        </SwiperSlide> 
+                    )
+                })}
+                <NextButton/>
+            </Swiper>
+            
         </div>
     )
 }
