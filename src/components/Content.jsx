@@ -1,12 +1,16 @@
 import { Component } from "react";
+import '../App.css'
 
 class Content extends Component{
     render() {
         const {img,title} = this.props
         return (
-             <div>
+             <div className="contentWrapper">
                 <img src={img} alt="" />
-                <h5>{title}</h5>
+                <div className="contentDesc bg-dark bg-opacity-50">
+                  <h5>{title}</h5>
+                  <button></button>
+                </div>
              </div>
         );
     }

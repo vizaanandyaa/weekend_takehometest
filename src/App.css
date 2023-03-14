@@ -66,6 +66,7 @@
   background-position-x: 200px,right,right;
   background-position-y:350px,30px,0;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 .aboutWrap{
@@ -131,7 +132,7 @@
   background: url(./images/testi/Oval\ +\ Icon1.png);
 }
 
-.nextbuttonNav button{
+.nextbuttonNav button,.contentDesc button{
   background: url(./images/testi/Oval\ +\ Icon.png);
 }
 
@@ -139,7 +140,7 @@
   background-repeat: no-repeat;
   width: 40px;
   height: 40px;
-  border-radius: 50px;
+  border-radius: 100%;
   border: 1px solid #0b24fb;
   background-size: contain;  
 }
@@ -147,41 +148,83 @@
 .contents{
   background-color: black;
   padding-top: 156px;
+  background-image: url(./background/tips/Path\ 3.png);
+  background-size: 140px;
+  background-position-x:1030px;
+  background-position-y: 700px;
+  background-repeat: no-repeat;
 }
-
 
 .contents h2{
   font-weight: 900;
   margin-bottom: 30px;
+  text-align: center;
+}
+
+.contents h1{
+  margin: 150px 0 30px;
+  font-weight: 900;
 }
 
 .contents p{
   padding: 0 25%;
   margin-bottom: 63px;
+  text-align: center;
 }
 
 .content{
   display: flex;
+  padding: 10px;
 }
 
 .content img{
-  width: 60%;
+  width: 100%;
 }
 
-.content h5{
+.contentDesc h5{
   font-size: 16px;
+  width: 80%;
+}
+
+.contentWrapper{
+  margin-right: 10px;
+  position: relative;
+}
+
+.contentDesc{
+  display: flex;
+  position: absolute;
+  top: 95px;
+  width: 100%;
+  padding: 20px 10px 10px 20px;
+}
+
+.contentDesc button{
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: none;
+  background-size: cover; 
+  margin: 5px;
 }
 
 
 
 
-@media(max-width:640px){
-  .test{
-    margin: 0 10px;
+
+
+@media(max-width:680px){
+  .testimonials{
+    top: 1380px;
   }
 
   .nextbuttonNav,.prevbuttonNav{
     display: none;
+  }
+
+  .content{
+    display: block;
   }
 }
 
@@ -189,4 +232,6 @@
   .nextbuttonNav{
     left: 90%;
   }
+
+  
 }
