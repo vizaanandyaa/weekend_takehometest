@@ -71,7 +71,6 @@
 
 .aboutWrap{
   width: 42%;
-  margin: auto 30%;
   padding: 160px 0 279px;
   font-weight: 600;
   font-size: 21;
@@ -175,6 +174,7 @@
 .content{
   display: flex;
   padding: 10px;
+  margin-bottom: 130px;
 }
 
 .content img{
@@ -209,7 +209,43 @@
   margin: 5px;
 }
 
+.footer{
+  background-image: url(./background/footer/Bitmap.png),url(./background/footer/Path\ 4.png);
+  background-position-y:0,50px;
+  background-position-x: 20px ,0;
+  background-repeat: no-repeat;
+}
 
+.footer h1{
+  font-size: 32px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.footer p{
+  font-size: 18px;
+  text-align: center;
+  margin: 30px 300px 203px;
+}
+
+.credit p{
+  margin: 25px 250px;
+  border: 1px solid white;
+  width: 35%;
+  border-radius: 20px;
+}
+
+.credit h5{
+  margin: 24px 0;
+}
+
+.credit{
+  background-color: #0B24FB;
+}
+
+.credit span{
+  font-weight: 700;
+}
 
 
 

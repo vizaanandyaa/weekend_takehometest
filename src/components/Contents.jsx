@@ -26,7 +26,7 @@ function Contents(){
                 <h1 className="text-center">Help and Tips</h1>
                 <div className="row">
                     <div className="col-md-1"></div>
-                    <div className="col-md-10 content pb-5">
+                    <div className="col-md-10 content ">
                         {articles.map((article) =>{
                             return(
                                 
@@ -34,7 +34,7 @@ function Contents(){
                             )
                         })}   
                     </div>
-                    <div className="col-md-1"></div>
+                    <div className="col-md-1 p-0"></div>
                 </div>
             </div>
         </div>

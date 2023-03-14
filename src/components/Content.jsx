@@ -7,7 +7,7 @@ class Content extends Component{
         return (
              <div className="contentWrapper">
                 <img src={img} alt="" />
-                <div className="contentDesc bg-dark bg-opacity-50">
+                <div className="contentDesc bg-black bg-opacity-50">
                   <h5>{title}</h5>
                   <button></button>
                 </div>
