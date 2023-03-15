@@ -5,12 +5,16 @@ import '../App.css'
 class Home extends Component{
     render(){
         return(
-            <div>
-                <div className="header col-6">
-                    <img src={profile} alt="" />
-                    <div className="greetings">
-                        <p>Good Morning</p>
-                        <h5>Fellas</h5>
+            <div className="header container-fluid p-0">
+                <div className="row my-3">
+                    <div className="col-3 text-end p-0">
+                        <img src={profile} alt="" />
+                    </div>
+                    <div className="col-9 p-0">
+                        <div className="greetings">
+                            <p>Good Morning</p>
+                            <h5>Fellas</h5>
+                        </div>
                     </div>
                 </div>
                 <div className="landing text-center">
