@@ -12,23 +12,29 @@
   margin-right: 13px;
 }
 
+.greetings{
+  width: 50%;
+}
+
 .greetings p{
   margin: 0;
   font-size: 12px;
+  width: 50%;
 }
 
 .greetings h5{
   font-size: 16px;
   margin: 0;
   font-weight: 700;
+  width: 50%;
 }
 
 .landing{
   background-color: #EEBECE;
   background-image: url(background/home/Path\ 3.png),url(background/home/Bitmap.png), url(background/home/Oval.png),url(background/home/Path.png),url(background/home/Path\ 2.png);
-  background-size: 20%,15%, 10%,50%,100%;
-  background-position-x: 940px,center,400px,165px,0px;
-  background-position-y: 303px, 280px,240px,-35px,-10px;
+  background-size: 20%,150px, 10%,50%,100%;
+  background-position-x: 940px,center,400px,20%,0px;
+  background-position-y: 300px, 280px,240px,-25px,-10px;
   background-repeat: no-repeat;
   padding-top: 84px;
 }
@@ -242,8 +248,17 @@
   font-weight: 700;
 }
 
+@media(max-width:480px){
+  .landing{
+    background-size: 0,150px,30%,200%,350%;
+    background-position-x:100px,center,-60px,-460px,-570px;
+    background-position-y:100px,350px,300px,-80px,-90px;
+  }
 
-
+  .landing button{
+    margin-bottom: 100px;
+  }
+}
 
 @media(max-width:680px){
   .testimonials{

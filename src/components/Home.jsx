@@ -5,16 +5,15 @@ import '../App.css'
 class Home extends Component{
     render(){
         return(
-            <div className="header container-fluid p-0">
+            <div className="header">
+                <div className="container-fluid p-0 overflow-hidden">
                 <div className="row my-3">
                     <div className="col-3 text-end p-0">
                         <img src={profile} alt="" />
                     </div>
-                    <div className="col-9 p-0">
-                        <div className="greetings">
-                            <p>Good Morning</p>
-                            <h5>Fellas</h5>
-                        </div>
+                    <div className="col-9 p-0 greetings">
+                        <p>Good Morning</p>
+                        <h5>Fellas</h5>
                     </div>
                 </div>
                 <div className="landing text-center">
@@ -23,6 +22,8 @@ class Home extends Component{
                     <button>Let's Go</button>
                 </div>
             </div>
+            </div>
+            
         )
     }
 }
