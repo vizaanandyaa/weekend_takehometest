@@ -12,10 +12,6 @@
   margin-right: 13px;
 }
 
-.greetings{
-  width: 50%;
-}
-
 .greetings p{
   margin: 0;
   font-size: 12px;
@@ -75,6 +71,7 @@
   padding: 160px 0 279px;
   font-weight: 600;
   font-size: 21;
+  margin: auto;
 }
 
 .aboutWrap span{
@@ -251,16 +248,33 @@
 @media(max-width:480px){
   .landing{
     background-size: 0,150px,30%,200%,350%;
-    background-position-x:100px,center,-60px,-460px,-570px;
-    background-position-y:100px,350px,300px,-80px,-90px;
+    background-position-x:100px,center,-60px,-370px,-450px;
+    background-position-y:100px,350px,250px,-45px,0px;
+  }
+
+  .landing h1{
+    font-size: 52px;
+  }
+
+  .landing p, .aboutWrap p,.aboutWrap h5{
+    font-size: 16px;
   }
 
   .landing button{
     margin-bottom: 100px;
   }
+
+  .about{
+    background-position-x: 30px,right,right;
+    background-position-y:450px,30px,0;
+  }
 }
 
 @media(max-width:680px){
+  .aboutWrap{
+    width: 80%;
+  }
+
   .testimonials{
     top: 1380px;
   }
