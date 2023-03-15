@@ -33,6 +33,7 @@
   background-position-y: 300px, 280px,240px,-25px,-10px;
   background-repeat: no-repeat;
   padding-top: 84px;
+  
 }
 
 .landing h1{
@@ -72,6 +73,7 @@
   font-weight: 600;
   font-size: 21;
   margin: auto;
+  animation: about 1s ease-in-out 0s 1 normal forwards;
 }
 
 .aboutWrap span{
@@ -349,6 +351,6 @@
   .nextbuttonNav{
     left: 90%;
   }
-
   
 }
+

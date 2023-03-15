@@ -1,6 +1,5 @@
 import React from "react";
 import {useSwiper} from 'swiper/react';
-import nextButton from '../images/testi/Oval + Icon.png'
 
 const NextButton =() =>{
     const swiper = useSwiper();

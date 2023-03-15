@@ -6,8 +6,10 @@ import { Swiper, SwiperSlide} from 'swiper/react';
 import {FreeMode} from 'swiper';
 import "swiper/css";
 import "swiper/css/free-mode";
-import 'bootstrap/dist/css/bootstrap.min.css'
-import {NextButton,PrevButton} from './Button'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import {NextButton,PrevButton} from './Button';
 
 function Testimonials(){
     const [testi,setTesti] = useState([])
@@ -21,8 +23,11 @@ function Testimonials(){
             console.log(err)
         })
     });
+    useEffect(()=>{
+        AOS.init({duration:2000})
+    },[]);
     return(
-        <div className="testimonials py-1 px-1 justify-content">
+        <div className="testimonials py-1 px-1 justify-content" data-aos="fade-down">
             <h1 className="text-white my-4">Testimonials</h1>
             <Swiper 
             freeMode ={true}

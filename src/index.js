@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Home from './components/Home'
-import About from './components/About'
+import {Home,About} from './components/Home'
 import Testimonials from './components/Testimonials';
 import Contents from './components/Contents';
 import Footer from './components/Footer';
