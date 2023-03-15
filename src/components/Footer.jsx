@@ -8,11 +8,11 @@ class Footer extends Component{
                     <h1>You're all set.</h1>
                     <p> The wise man therefore always holds in these matters to this principle of  selection.</p>
                     <div className="row credit text-center">
-                        <div className="col-md-5">
+                        <div className="col-6">
                             <h5><span>wknd@</span>2020</h5>
                         </div>
-                        <div className="col-md-2"></div>
-                        <div className="col-md-5">
+                        
+                        <div className="col-6">
                             <p>alpha version 0.1</p>
                         </div>
                     </div>

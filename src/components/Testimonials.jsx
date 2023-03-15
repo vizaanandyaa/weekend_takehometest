@@ -30,8 +30,12 @@ function Testimonials(){
             modules ={[FreeMode]}
             className='mySwipper'
             breakpoints={{
+                375:{
+                    slidesPerView : 1,
+                    spaceBetween : 10,
+                },
                 480:{
-                    slidesPerView : 2,
+                    slidesPerView : 1,
                     spaceBetween : 10,
                 },
                 1024:{

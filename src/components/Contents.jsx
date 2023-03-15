@@ -23,7 +23,7 @@ function Contents(){
             <h2>Resource</h2>
             <p>These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best</p>
             <div className="container">
-                <h1 className="text-center">Help and Tips</h1>
+                <h1>Help and Tips</h1>
                 <div className="row">
                     <div className="col-md-1"></div>
                     <div className="col-md-10 content ">

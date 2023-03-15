@@ -161,6 +161,7 @@
 .contents h1{
   margin: 150px 0 30px;
   font-weight: 900;
+  text-align: center;
 }
 
 .contents p{
@@ -187,12 +188,13 @@
 .contentWrapper{
   margin-right: 10px;
   position: relative;
+  overflow: hidden;
 }
 
 .contentDesc{
   display: flex;
   position: absolute;
-  top: 95px;
+  top: 55%;
   width: 100%;
   padding: 20px 10px 10px 20px;
 }
@@ -209,7 +211,7 @@
 
 .footer{
   background-image: url(./background/footer/Bitmap.png),url(./background/footer/Path\ 4.png);
-  background-position-y:0,50px;
+  background-position-y:0, 35%;
   background-position-x: 20px ,0;
   background-repeat: no-repeat;
 }
@@ -234,7 +236,8 @@
 }
 
 .credit h5{
-  margin: 24px 0;
+  margin: 24px 15%;
+  text-align: left;
 }
 
 .credit{
@@ -265,18 +268,56 @@
   }
 
   .about{
-    background-position-x: 30px,right,right;
-    background-position-y:450px,30px,0;
+    background-position-x: 70px,right,right;
+    background-position-y:460px,30px,0;
   }
+
+  .testimonials{
+    top: 1250px;
+  }
+
+  .testimonials h1{
+    text-align: left;
+    margin-left: 40px;
+  }
+
+  .testimony{
+    height: 180px;
+  }
+
+  .contents h2 ,.contents p{
+    text-align: left;
+  }
+
+  .contents h2{
+    margin: 45px 0 30px 65px;
+  }
+
+  .contents p{
+    padding: 0 15%;
+  }
+
+  .contents h1{
+    text-align: left;
+  }
+
+  .contentWrapper{
+    margin: 10px 0 10px;
+  }
+
+  .contentDesc{
+    top:68%;
+  }
+  .footer{
+    background-position-y: 60%,80%;
+  }
+  
+  
 }
 
 @media(max-width:680px){
   .aboutWrap{
     width: 80%;
-  }
-
-  .testimonials{
-    top: 1380px;
   }
 
   .nextbuttonNav,.prevbuttonNav{
@@ -286,6 +327,22 @@
   .content{
     display: block;
   }
+
+  .footer p{
+    margin:50px 30px 360px;
+    text-align: left;
+  }
+
+  .credit p,.credit h5{
+    font-size: 12px;
+  }
+
+  .credit p{
+    margin: 20px 0;
+    width: 80%;
+    padding: 5px 15px;
+  }
+  
 }
 
 @media(max-width:985px){
