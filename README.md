@@ -1,3 +1,12 @@
+Github Repository
+https://github.com/vizaanandyaa/weekend_takehometest
+
+Link Deployment
+https://vizaanandyaa.github.io/weekend_takehometest/
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
